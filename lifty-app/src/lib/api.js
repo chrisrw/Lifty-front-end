@@ -14,8 +14,8 @@ export const deleteSet = (exerciseId, setId) => {
   }).then(res => res.json());
 }
 //DELETE workout
-export const deleteWorkout = (workoutId, setId) => {
-  return fetch(`${APIURL}/exercise/${workoutId}/${setId}`, {
+export const deleteWorkout = (workoutId) => {
+  return fetch(`${APIURL}/workout/${workoutId}`, {
     method: "delete"
   }).then(res => res.json());
 };
