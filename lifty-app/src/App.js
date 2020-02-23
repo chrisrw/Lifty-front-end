@@ -14,10 +14,15 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/home" component={Home} />
-        <Route exact path="/workout/:id" component={Workout} />
+        <Route
+          exact
+          path="/workout/:id"
+          component={Workout} />
+        
       </Switch>
     </div>
-  );
-}
+  )
+};
+
 
 export default App;
