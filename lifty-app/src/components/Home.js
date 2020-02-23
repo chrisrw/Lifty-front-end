@@ -4,12 +4,13 @@ import { fetchWorkoutList, deleteWorkout } from "../lib/api";
 import { APIURL } from "../config";
 
 function Home() {
-  const initialWorkoutState = {
+  const createNewWorkout = {
     date: Date()
   };
 
   const [workout, setWorkout] = useState([]);
-  const [createNewWorkout, setCreateNewWorkout] = useState(initialWorkoutState);
+  
+  
   //create new workout
   const submitHandler = e => {
     e.preventDefault();
@@ -20,9 +21,13 @@ function Home() {
         "Content-type": "application/json; charset=UTF-8"
       },
       body: JSON.stringify(createNewWorkout)
-    }).then(response => response.json());
-  };
+    }).then(response => response.json())
+    .then(data => {
+      setWorkout([...workout, data])
+    })
+  }
 
+  
   //fetch all workouts
   useEffect(() => {
     fetchWorkoutList()
@@ -42,9 +47,9 @@ function Home() {
       <button onClick={submitHandler}>Click to create workout</button>
       <ul className="homeList">
         {workout.map((date, index) => (
-          <div>
-            <Link key={date._id} to={`/workout/${date._id}`}>
-              <li key={date._id}>{new Date(date.date).toLocaleDateString()}</li>
+          <div key={date._id}>
+            <Link to={`/workout/${date._id}`}>
+              <li>{new Date(date.date).toLocaleDateString()}</li>
             </Link>
           </div>
         ))}

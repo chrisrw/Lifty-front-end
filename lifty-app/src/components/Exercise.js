@@ -1,54 +1,51 @@
 import React from "react";
-import { APIURL } from "../config";
-import { useParams } from "react-router";
-function Exercise() {
-  const { id } = useParams();
 
-  const submitHandler = e => {
-    e.preventDefault();
-    const { name, setNumber, reps, weight } = e.target;
-    let exercise = {
-      name: name.value,
-      sets: {
-        setNumber: setNumber.value,
-        reps: reps.value,
-        weight: weight.value
-      },
-      workout: id
-    };
-    fetch(`${APIURL}/exercise/`, {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json; charset=UTF-8"
-      },
-      body: JSON.stringify(exercise)
-    }).then(response => response.json());
-  };
-  
-  
-    
-  
+function Exercise({exercise, submitHandler, handleChange}) {
+
   return (
     <div>
       <form onSubmit={submitHandler}>
         <div>
           <label>Name of Exercise</label>
-          <input name="name" type="text" />
+          <input
+            name="name"
+            type="text"
+            value={exercise.name}
+            onChange={handleChange}
+            required
+          />
         </div>
         <div>
           <label># of reps</label>
-          <input name="reps" type="text" />
+          <input
+            name="reps"
+            type="text"
+            value={exercise.sets.reps}
+            onChange={handleChange}
+            required
+          />
         </div>
         <div>
           <label>Set #</label>
-          <input name="setNumber" type="text" />
+          <input
+            name="setNumber"
+            type="text"
+            value={exercise.sets.setNumber}
+            onChange={handleChange}
+            required
+          />
         </div>
         <div>
           <label>Weight</label>
-          <input name="weight" type="text" />
+          <input
+            name="weight"
+            type="text"
+            value={exercise.sets.weight}
+            onChange={handleChange}
+            required
+          />
         </div>
-        <button >Submit</button>
-        
+        <button>Submit</button>
       </form>
     </div>
   );
