@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Link, Route } from "react-router-dom";
-import { fetchWorkoutList, deleteWorkout } from "../lib/api";
+import { Link } from "react-router-dom";
+import { fetchWorkoutList } from "../lib/api";
 import { APIURL } from "../config";
 
 function Home() {

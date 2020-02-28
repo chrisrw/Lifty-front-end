@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Exercise from "./Exercise";
-import { Redirect, Link } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import { APIURL } from "../config";
 import { useParams } from "react-router";
 import CreateExercise from "./CreateExercise";
