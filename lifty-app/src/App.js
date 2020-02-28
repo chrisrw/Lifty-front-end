@@ -2,7 +2,7 @@ import React from "react";
 import { Link, Route, Switch } from "react-router-dom";
 import Workout from "./components/Workout";
 import Home from './components/Home'
-import Exercise from './components/Exercise'
+
 function App() {
   return (
     <div>

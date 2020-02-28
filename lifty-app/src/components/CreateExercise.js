@@ -31,7 +31,6 @@ function CreateExercise({setRunRefresh}) {
             }
         });
     }
-   
   };
   const submitHandler = e => {
     e.preventDefault();

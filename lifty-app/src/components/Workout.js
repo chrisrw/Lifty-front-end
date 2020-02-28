@@ -55,7 +55,7 @@ function Workout() {
 
   //GET exercise data for specific workout
   return (
-    <div>
+    <div className='background'> 
       <CreateExercise setRunRefresh={setRunRefresh}/>
       {selectedExercise && <EditExercise setSelectedExercise={setSelectedExercise} selectedExercise={selectedExercise} setRunRefresh={setRunRefresh}/>}
       <div>

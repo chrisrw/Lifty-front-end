@@ -3,8 +3,8 @@ import React from "react";
 function Exercise({exercise, submitHandler, handleChange}) {
 
   return (
-    <div>
-      <form onSubmit={submitHandler}>
+    <div className='center'>
+      <form onSubmit={submitHandler} >
         <div>
           <label>Name of Exercise</label>
           <input
