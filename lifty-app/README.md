@@ -1,68 +1,41 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+Lifty is a workout tracking application that lists the exercises you have done as well as the repetitions, sets, and weights used in the exercises. Lifty should be used for people who want to keep track of their progress in the gym. Keeping track of a users progress will allow them to make informed decisions on how best to modify their workouts based on their past performance. Anyone who wants to make sure their are progressing towards their fitness goals, or just wants a motivational boost, is encouraged to use Lifty. 
 
-In the project directory, you can run:
+## Brief Example
 
-### `yarn start`
+This could be a code snippet showing how your project should be used (if it is meant to be integrated into another app)
+This could be a screenshot of your project running in the browser (if it is a stand-alone application)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## List of Features 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Features of the Lifty app include: 
+1) The ability to to log exercises, number of sets, reps, and weights used in said exercise. 
+2) The ability to post, retrieve, edit, and delete persisting user exercise data.
 
-### `yarn test`
+## User Stories
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+As someone who exercises casually and without a real plan, I want to be able to be able to see the exercises I completed, so I know what type of exercise I should do next.
 
-### `yarn build`
+As a health conscious individual who likes to keep things organized, I need to be able to log every exercise as I go, so that I can make an informed decision as to what exercise I should do next.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+As someone who exercises using the "progressive overload" methodology, I need to be able to see the precise weight and repetitions for each set of an exercise. Knowing this information, I can progressively increase the weights I use in small increments over time. 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## List of Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+React (with React Hooks,) Heroku, and Lodash.
 
-### `yarn eject`
+## Installation Instructions / Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The only thing you need to do to get started is enter the address listed below. Doing so will take you to the application!
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+https://lifty-app.herokuapp.com/
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+If you would rather run the app locally, you can always fork, clone, and run this repository locally. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Contribute
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Source code: https://github.com/chrisrw/Lifty-front-end
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Deployed Application: https://lifty-app.herokuapp.com/
